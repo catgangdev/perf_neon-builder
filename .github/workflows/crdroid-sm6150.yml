@@ -9,6 +9,11 @@ on:
       build_type:
         required: true
         type: string
+        on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
